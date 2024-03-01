@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: #000000;
+}
+
+body {
+  background-color: #020d45;
+  background: linear-gradient(90deg, #1a181f 0%, #362a84 100%);
+  color: #222;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.temperature-converter {
+  background: #7393b7;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 25px 45px;
+  min-width: 320px;
+  border-radius: 25px;
+  width: 90%;
+  height: auto;
+  box-shadow: 5px solid rgba(0, 0, 0, 0.02) inset;
+  backdrop-filter: blur(21px);
+}
+
+.title {
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+}
+
+.result {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result-heading {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.result-value {
+  border-bottom: 2px solid #000000;
+  padding: 10px;
+  transition: all .45s ease;
+}
+
+label {
+  color: #0a0f01;
+  font-size: 1rem;
+}
+
+input,
+select {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.degree-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.degree-field {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+option {
+  background-color: #2b2b3a;
+  color: #f6f6f6;
+}
+
+button {
+  width: 30%;
+  background: linear-gradient(to bottom, #362ffa, #2a294f);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-left: 35%;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #03af68, #03af68);
+}
+
+/* Add a right margin to each icon */
+
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
+.loading {
+  display: none;
+}
